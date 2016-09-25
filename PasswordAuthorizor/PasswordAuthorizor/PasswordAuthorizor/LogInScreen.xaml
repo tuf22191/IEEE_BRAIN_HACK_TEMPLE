@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PasswordAuthorizor.LogInScreen">
+  <!--<Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />-->
+
+
+
+  
+
+  <StackLayout>
+    <Label x:Name="labelChanger"
+          Text="Hello, Please Login In !"
+          VerticalOptions="Start"
+          HorizontalTextAlignment="Center"
+          IsVisible="true"
+          FontSize="Large"
+          FontAttributes="Bold"
+          TextColor="Aqua" />
+
+
+    <Button x:Name="loginButton"
+            Text="Log In!"
+            HorizontalOptions="Center"
+            Clicked = "onButtonClicked" />
+  
+  </StackLayout>
+
+
+
+
+</ContentPage>
