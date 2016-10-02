@@ -21,7 +21,8 @@ namespace PasswordAuthorizor
        async void DownloadPageAsync()
         {
             // ... Target page.
-            string page = "http://10.109.140.60:8000/info";
+            string page = "http://10.0.0.16:8000/info";
+                //"http://10.109.140.60:8000/info";
 
             // ... Use HttpClient.
             using (HttpClient client = new HttpClient())
@@ -32,8 +33,7 @@ namespace PasswordAuthorizor
                 string result = await content.ReadAsStringAsync();
 
                 // ... Display the result.
-                if (result != null &&
-                result.Length >= 50)
+                if (result != null )
                 {
                     labelChanger.Text = result;
                 }
